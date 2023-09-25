@@ -1,0 +1,9 @@
+version: "3"
+services:
+       nginx:
+           container_name: nginx
+           image: nginx
+           restart: always
+           build: .
+           ports:
+             - "8080:8888"
